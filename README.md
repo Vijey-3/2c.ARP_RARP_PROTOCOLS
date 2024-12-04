@@ -26,7 +26,7 @@ s=socket.socket()
 s.bind(('localhost',8000))
 s.listen(5)
 c,addr=s.accept()
-address={"165.165.80.80":"6A:08:AA:C2","165.165.79.1":"8A:BC:E3:FA"};
+address={"165.165.80.80":"e0:2e:ob:7c","165.165.79.1":"7c:0b:2e:e0"};
 while True:
     ip=c.recv(1024).decode()
     try:
