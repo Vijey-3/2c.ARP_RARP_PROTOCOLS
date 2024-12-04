@@ -19,7 +19,7 @@ stored.
 5. Map the IP address with its MAC address and return the MAC address to client.
 P
 ## PROGRAM - ARP
-### CLIENT.PY:
+### SERVER.PY:
 ~~~
 import socket
 s=socket.socket()
@@ -34,7 +34,7 @@ while True:
     except KeyError:
      c.send("Not Found".encode())
 ~~~
-### SERVER.PY:
+### CLIENT.PY:
 ~~~
 import socket
 s=socket.socket()
